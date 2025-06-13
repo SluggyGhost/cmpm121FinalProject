@@ -1,0 +1,35 @@
+name,cost,power,text
+Wooden Cow,1,1,Vanilla
+Pegasus,3,5,Vanilla
+Minotaur,5,9,Vanilla
+Titan,6,12,Vanilla
+Zeus,5,10,When Revealed: Lower the power of each card in your opponent's hand by 1.
+Ares,4,6,When Revealed: Gain +2 power for each enemy card here.
+Medusa,4,6,"When ANY other card is played here, lower that card's power by 1."
+Cyclops,5,5,"When Revealed: Discard your other cards here, gain +2 power for each discarded."
+Poseidon,4,7,When Revealed: Move away an enemy card here with the lowest power.
+Artemis,4,7,When Revealed: Gain +5 power if there is exactly one enemy card here.
+Hera,5,9,When Revealed: Give cards in your hand +1 power.
+Demeter,3,5,When Revealed: Both players draw a card.
+Hades,3,4,When Revealed: Gain +2 power for each card in your discard pile.
+Hercules,4,5,When Revealed: Doubles its power if its the strongest card here.
+Dionysus,3,4,When Revealed: Gain +2 power for each of your other cards here.
+Hermes,4,8,When Revealed: Moves to another location.
+Hydra,4,4,Add two copies to your hand when this card is discarded.
+Ship of Theseus,3,4,When Revealed: Add a copy with +1 power to your hand.
+Sword of Damocles,5,10,End of Turn: Loses 1 power if not winning this location.
+Midas,3,3,When Revealed: Set ALL cards here to 3 power.
+Aphrodite,4,4,When Revealed: Lower the power of each enemy card here by 1.
+Athena,4,6,Gain +1 power when you play another card here.
+Apollo,5,8,When Revealed: Gain +1 mana next turn.
+Hephaestus,2,3,When Revealed: Lower the cost of 2 cards in your hand by 1.
+Persephone,3,5,When Revealed: Discard the lowest power card in your hand.
+Prometheus,1,1,When Revealed: Draw a card from your opponent's deck.
+Pandora,4,9,"When Revealed: If no ally cards are here, lower this card's power by 5."
+Icarus,0,0,"End of Turn: Gains +1 power, but is discarded when its power is greater than 7."
+Iris,2,2,End of Turn: Give your cards at each other location +1 power if they have unique powers.
+Nyx,3,5,"When Revealed: Discards your other cards here, add their power to this card."
+Altas,5,10,End of Turn: Loses 1 power if your side of this location is full.
+Daedalus,2,3,When Revealed: Add a Wooden Cow to each other location.
+Helios,4,10,End of Turn: Discard this.
+Mnemosyne,3,5,When Revealed: Add a copy of the last card you played to your hand.
