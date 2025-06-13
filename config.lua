@@ -6,12 +6,12 @@ maxTurns = 0
 numHumanPlayers = 1 -- One player by default
 numComPlayers = 1   -- One computer competitor by default
 
-width = 960
-height = 640
+width = 1152
+height = 768
 centerX, centerY = width/2, height/2
-borderMargin = height/20
+borderMargin = height/40
 
-cardWidth, cardHeight = 80, 112
+cardWidth, cardHeight = 120, 168
 cardMargin = 4
 
 
