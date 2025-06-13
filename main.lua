@@ -1,8 +1,9 @@
 
 io.stdout:setvbuf("no")
 
+require "button"
 require "card"
---require "commands"
+require "command"
 require "config"
 require "const"
 require "csvReader"
@@ -23,8 +24,8 @@ function love.load()
   grabber = GrabberClass:new()
   player1 = PlayerClass:new(1)   -- human player
   player2 = PlayerClass:new(0)   -- computer player
-  -- drawnCards = {}
-  
+  submitBtn = ButtonPrototype:new("SUBMIT", width - cardWidth, height - cardHeight, 100, 50, submit)
+
   -- Read cards from file
   local cardDataList = loadCSV("cards.csv")
   for _, cardData in ipairs(cardDataList) do
@@ -35,7 +36,7 @@ function love.load()
   player1:drawFromDeck()
   player1:drawFromDeck()
   player1:drawFromDeck()
-  
+
   print(width .. ", " .. height)
 end
 
@@ -46,6 +47,8 @@ function love.update()
   for _, card in ipairs(player1.hand) do
     card:update()
   end
+
+  submitBtn:update()
 end
 
 function love.draw()
@@ -69,6 +72,8 @@ function love.draw()
   if grabber.currentMousePos then
     love.graphics.print("Mouse: " .. tostring(grabber.currentMousePos.x) .. ", " .. tostring(grabber.currentMousePos.y))
   end
+  
+  submitBtn:draw()
 end
 
 function checkForMouseHover()
@@ -80,3 +85,10 @@ function checkForMouseHover()
     card:checkForMouseOver(grabber)
   end
 end
+
+function love.mousepressed(x, y, button)
+  if button == 1 then -- left mouse button
+    submitBtn:checkForMouseOver(grabber)
+  end
+end
+

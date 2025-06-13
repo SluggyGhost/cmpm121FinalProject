@@ -1,12 +1,12 @@
 
 CardPrototype = {}
 
-function CardPrototype:new(xPos, yPos, name, cost, power, text, isFaceUp)
+function CardPrototype:new(x, y, name, cost, power, text, isFaceUp)
   local card = {}
   local metadata = {__index = CardPrototype}
   setmetatable(card, metadata)
 
-  card.position = Vector(xPos, yPos)
+  card.position = Vector(x, y)
   card.name = name or "NAME"
   card.cost = cost or 999
   card.power = power or 999
@@ -45,8 +45,8 @@ function CardPrototype:draw()
   love.graphics.setColor(COLOR.RED)
   love.graphics.printf(self.power, self.position.x + cardMargin, self.position.y + cardMargin, cardWidth - 2*cardMargin, "right")
   love.graphics.setColor(COLOR.BLACK)
-  love.graphics.printf(self.name, self.position.x + cardMargin, self.position.y + 3*cardMargin, cardWidth - 2*cardMargin, "center")
-  love.graphics.printf(self.text, self.position.x + cardMargin, self.position.y + 6*cardMargin, cardWidth, "left", 0, 0.9, 0.9)
+  love.graphics.printf(self.name, self.position.x + cardMargin, self.position.y + 4*cardMargin, cardWidth - 2*cardMargin, "center")
+  love.graphics.printf(self.text, self.position.x + cardMargin, self.position.y + 12*cardMargin, cardWidth, "left", 0, 0.9, 0.9)
 
 end
 
